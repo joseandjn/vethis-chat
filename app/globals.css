@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Markdown de las respuestas del asesor (negritas, listas, links). */
+.md {
+  line-height: 1.6;
+}
+.md p + p,
+.md p + ul,
+.md p + ol,
+.md ul + p,
+.md ol + p {
+  margin-top: 0.6rem;
+}
+.md ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+}
+.md ol {
+  list-style: decimal;
+  padding-left: 1.25rem;
+}
+.md li + li {
+  margin-top: 0.25rem;
+}
+.md a {
+  color: var(--color-teal-700);
+  text-decoration: underline;
+}
+.md strong {
+  font-weight: 600;
+}
+.md table {
+  margin-top: 0.6rem;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+.md th,
+.md td {
+  border: 1px solid var(--color-stone-200);
+  padding: 0.25rem 0.5rem;
+}
